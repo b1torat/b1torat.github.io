@@ -1,0 +1,664 @@
+/*
+Theme Name: Makeup Theme
+Theme URI: 
+Description: ДОЛЖНА СТОЯТЬ ЭТА ТЕМА!
+Version: 1.0
+Author: Студия веб-дизайна
+Author URI: 
+*/
+
+@font-face {
+	font-family: eurofurence light;
+	src: url(fonts/ehHJmnXr.ttf);
+
+}
+@font-face {
+	font-family: Quicksand;
+	src: url(fonts/hVunJjfO.otf);
+}
+@font-face {
+	font-family: Freehand521 BT;
+	src: url(fonts/Freehand_521_BT.otf);
+}
+*:lang(en){font-family: Quicksand;} 
+*:lang(ru){font-family:  eurofurence light;}
+*:lang(it){font-family: Freehand521 BT;}
+
+
+/*Портфолио*/
+
+.photo{
+width: 33,33333333vw;
+/*640px;*/
+height: 18.54vw; /*356px;*/
+}
+
+/*Анимации*/
+@keyframes fb1 {
+	from {background: url(buttons/button21.png); background-size: cover;}
+	to{background: url(buttons/button22.png); background-size: cover;}
+	
+}
+@keyframes fb2 {
+	from {background: url(buttons/button22.png); background-size: cover;}
+	to{background: url(buttons/button21.png); background-size: cover; }
+	
+}
+@keyframes in1 {
+	from {background: url(buttons/button31.png); background-size: cover;}
+	to{background: url(buttons/button32.png); background-size: cover;}
+	
+}
+@keyframes in2 {
+	from {background: url(buttons/button32.png); background-size: cover;}
+	to{background: url(buttons/button31.png); background-size: cover; }
+	
+}
+@keyframes vk1 {
+	from {background: url(buttons/button41.png); background-size: cover;}
+	to{background: url(buttons/button42.png); background-size: cover; }
+	
+}
+@keyframes vk2 {
+	from {background: url(buttons/button42.png); background-size: cover;}
+	to{background: url(buttons/button41.png); background-size: cover; }
+	
+}
+@keyframes yu1 {
+	from {background: url(buttons/Buttonyoutube1.png); background-size: cover;}
+	to{background: url(buttons/Buttonyoutube2.png); background-size: cover; }
+	
+}
+@keyframes yu2 {
+	from {background: url(buttons/Buttonyoutube2.png); background-size: cover;}
+	to{background: url(buttons/Buttonyoutube1.png); background-size: cover; }
+	
+}
+@keyframes 1 {
+	from {background: url(buttons/button51.png);}
+	to{background: url(buttons/button52.png); }
+	
+}
+@keyframes 2 {
+	from {background: url(buttons/button52.png)}
+	to{background: url(buttons/button51.png) }
+	
+}
+@keyframes ud1 {
+	from {background: url(buttons/button11.png);}
+	to{background: url(buttons/button12.png); }
+	
+}
+@keyframes ud2 {
+	from {background: url(buttons/button12.png)}
+	to{background: url(buttons/button11.png) }
+	
+}
+/*Менюха и кнопочки*/
+.menubtn{
+width: 48px;/*48px;*/
+height: 39px;
+background: url(Buttons/Button51.png) no-repeat top left;
+position: fixed;
+top: 2%;
+left: 20px;
+animation: 2 0.5s;
+z-index: 2;
+}
+.menubtn:hover{
+animation: 1 0.5s;
+background: url(buttons/button52.png);
+}
+a{text-decoration:none;
+
+
+font-size: 1.66vw;/*24pt;*/
+}
+ul {
+margin: 0;
+padding: 0;
+list-style: none;
+z-index: 2;
+}
+.side{
+width: 355px;
+margin: 20px;
+
+}
+.menu .menu__drop a{
+	background: #2c2e2f;
+	color: #fff;
+	padding: 10px;
+	display: block;
+	margin-top: 4px;
+	transition: 0.5s all;
+	text-align: left;
+	padding-left: 30px;
+}
+
+.menu .menu__drop a:hover{
+	background: #474848;
+	padding: 10px 0 10px 20px;
+}
+.menu__list {
+position: fixed;
+top: 4%;
+z-index: 2;
+}
+
+
+.menu__drop{
+border-top: 10.417vw/*200px*/ solid transparent;
+position: fixed;
+width: 18.490vw; /*18.490vw;355px;*/
+opacity: 1;
+left: -25em;
+box-sizing: border;
+transition: left 1s ease;
+}
+gr{
+
+border-top: 100px solid red;
+}
+
+
+
+.menu__list:hover .menu__drop{
+	opacity: 1;
+	left: 20px;
+}
+
+/*Конкретно кнопочки*/
+.button1{
+margin-left: 12%;
+width: 4.01041vw;
+height: 4.01041vw;
+background: url(Buttons/Button21.png);
+position: absolute;
+animation: fb2 0.5s;
+background-size: cover;
+}
+.button2{
+margin-left: 22%;
+width: 4.01041vw; /*77px;*/
+height: 4.01041vw;
+background: url(Buttons/Button31.png);
+position: absolute;
+animation: in2 0.5s;
+background-size: cover;
+}
+.button3{
+margin-left: 32%;
+width: 4.01041vw;
+height: 4.01041vw;
+background: url(Buttons/Button41.png);
+position: absolute;
+animation: vk2 0.5s;
+background-size: cover;
+}
+.button4{
+margin-left: 42%;
+width: 4.01041vw;
+height: 4.01041vw;
+background: url(Buttons/Buttonyoutube1.png);
+position: absolute;
+animation: yu2 0.5s;
+background-size: cover;
+}
+.button1:hover{
+cursor: pointer;
+background: url(Buttons/Button22.png);
+animation: fb1 0.5s;
+background-size: cover;
+}
+.button2:hover{
+background: url(Buttons/Button32.png);
+animation: in1 0.5s;
+cursor: pointer;
+background-size: cover;
+}
+.button3:hover{
+background: url(Buttons/Button42.png);
+animation: vk1 0.5s;
+cursor: pointer;
+background-size: cover;
+}
+.button4:hover{
+background: url(Buttons/Buttonyoutube2.png);
+animation: yu1 0.5s;
+cursor: pointer;
+background-size: cover;
+}
+/*.НЕ РАЗКОМЕНТИТЬ!!!!! НЕ ДАЙ БОГ!
+
+menu .submenu{
+
+left: 10px;
+margin:0;
+padding:0;
+list-style: none;
+position: fixed;
+text-align:left;
+top: 18%;
+transition: 0.5s all;
+display: block;
+}
+.menu .submenu a{
+padding-top: 4%;
+padding-left: 2%;
+text-align:left;
+width: 355px;
+height: 62px;
+margin-top: 4px;
+background: #2c2e2f;
+display: block;
+box-sizing: border-box;
+transition: 0.5s all;
+}
+
+.menu .menubtn:hover .submenu {
+
+display: block;
+}
+
+.submenu a:hover{
+
+background: #474848;
+padding: 10px 0 10px 20px;
+
+}*/
+
+/* Распределение фона*/
+body{
+	margin: 0 auto;
+	background-color: white;
+	}
+.im{
+
+width: 33.3333333333333333333%;
+height : 18.54166667vw;
+/*356px;*/
+border:0;
+margin:0;
+padding:0;
+display:inline-block;
+transition: 0.5s all;
+float: left;
+
+}
+
+.jek{
+
+position: absolute;
+width: 100%;
+height: 37.08333333vw
+;/*712px*/
+z-index: 1;
+}
+#down{
+margin-left: 62.7%;
+margin-top: -3.9%;
+width: 2.708333333vw;
+height: 2.708333333vw;
+background: url(Buttons/Button11.png) ;
+position: absolute;
+transform: rotate(225deg);
+cursor: pointer;
+animation: ud2 0.5s;
+}
+#up{
+margin-top: -2%;
+margin-left: 60%;
+width: 2.708333333vw;
+/*52px;*/
+height: 2.708333333vw;
+background: url(Buttons/Button11.png);
+position: absolute;
+cursor: pointer;
+transform: rotate(45deg);
+animation: ud2 0.5s;
+}
+#down:hover{
+background: url(Buttons/Button12.png) ;
+animation: ud1 0.5s;
+}
+#up:hover{
+background: url(Buttons/Button12.png) ;
+animation: ud1 0.5s;
+}
+
+.cont{
+width: 100%;
+height: 37.08333333vw;/*712px*/
+background: #151515;
+
+color: #fff;
+
+
+box-sizing: border-box;
+}
+.mas{
+max-width: 1920px;
+min-width: 200px;
+min-height: 100px;
+margin: 0 auto;
+position: relative;
+}
+.firstdiv, .seconddiv, .seconddiv1, .phline, .thirddiv { }
+.firstdiv{
+width: 100%;
+height: 35.67vw;/*685px*/
+background: url(Backgrounds/Background1.jpg) center center;
+background-size: auto;
+color: #fff;
+text-align: center; 
+padding-top: 10.10vw; /*290px;*/
+box-sizing: border-box;
+
+}
+.seconddiv{
+background-color: white;
+width: 100%;
+height: 14.73958333vw;/*283px*/
+text-align: center;
+color: #282828;
+padding-top: 4.6875vw;
+/* 90px;*/
+box-sizing: border-box;
+background-size: auto;
+}
+.seconddiv1{
+background-color: white;
+width: 100%;
+height: 15.625vw;/*300px*/
+text-align: center;
+color: #282828;
+padding-top: 6.25vw; /*120px;*/
+box-sizing: border-box;
+background-size: auto;
+}
+.phline{
+background-color: white;
+width: 100%;
+height: 15.625vw;/*300px*/
+text-align: center;
+color: #282828;
+box-sizing: border-box;
+background-size: auto;
+
+
+text-align: center;
+}
+
+.panel{
+width: 100%;
+height: 6.979166667vw;
+/*134px;*/
+background: url(Backgrounds/Background_8_obuchenie.jpg) right center;
+background-size: auto;
+color: #fff;
+box-sizing: border-box;
+padding-top: 2%;
+}
+.obuch{
+width: 100%;
+height: 26.875vw;
+ /*516px;*/
+background: url(Backgrounds/Background_4.jpg) right center;
+background-size: auto;
+color: #fff;
+box-sizing: border-box;
+padding-top: 15px;
+padding-left: 30px;
+}
+.obuch1{
+width: 100%;
+height: 26.875vw;
+background: url(Backgrounds/Background_5.jpg) right center;
+background-size: auto;
+color: #fff;
+box-sizing: border-box;
+padding-top: 15px;
+padding-left: 30px;
+}
+
+.phbutton{
+
+width: 7.2vw; /*7.2vw*/
+height: 7.2vw;
+color: #a5a5a5;
+border-radius: 100px;
+border: 4px solid #a5a5a5;
+float: left;
+margin-left: 29%;
+display: inline-block;
+/*padding-top: 1.5vw;*/
+box-sizing: border-box;
+position: relative;
+transition: 0.5s all;
+}
+.phbutton span{
+position: absolute;
+display: block;
+
+left: 0%;
+top:22%;
+width: 100%;
+}
+.phbutton + .phbutton{
+margin-left: 5%;
+}
+.phbutton:hover{
+border: 5px solid #282828;
+color: #282828;
+cursor: pointer;
+}
+.phbutton a{
+
+color: #a5a5a5;
+
+}
+.phbutton a:hover{
+
+color: #282828;
+
+}
+.phbutton a:visited {
+color: #a5a5a5;
+}
+.thirddiv{
+width: 100%;
+height: 27.0313vw; /*519px*/
+background: url(Backgrounds/Background_2.jpg) right center;
+background-size: auto;
+color: #fff;
+padding-left: 30px;
+padding-top: 15px;
+box-sizing: border-box;
+
+}
+.quatrodiv{
+width: 100%;
+height: 27.0313vw; /*519px*/
+background: url(Backgrounds/Background_3.jpg) right center;
+background-size: auto;
+color: #fff;
+padding-left: 30px;
+padding-top: 15px;
+box-sizing: border-box;
+}
+.portfoliodiv{
+width: 100%;
+height: 8.541666667vw;
+ /*164px;*/
+background: url(Backgrounds/Background_7_portfoilio.jpg) right center;
+background-size: cover;
+color: #fff;
+
+padding-top: 3%;
+box-sizing: border-box;
+}
+/*width: 100%;
+height: 876px;
+background: url(Backgrounds/Background_7_(portfoilio).jpg) right;
+background-size: auto;
+color: #fff;
+box-sizing: border-box;
+padding-top: 2%;*/
+.footdiv{
+width: 100%;
+height: 40.72916667vw;
+ /*782px*/
+background: url(Backgrounds/Background9.jpg) right center;
+background-size: auto;
+color: #fff;
+
+padding-top: 3%;
+box-sizing: border-box;
+position: relative;
+
+}
+.web{
+
+
+position: absolute;
+
+
+margin-left: 53%;
+margin-top: 16.8%;
+
+
+
+}
+.num{
+height:4.73vw;
+width:26.3vw;
+color: #fff;
+font-size: 2.6vw;
+border: 4px solid white;
+text-align: center;
+
+box-sizing: border-box;
+margin-left: 35%;
+position: relative;
+}
+.num span{
+position: absolute;
+display: block;
+
+left: 0%;
+top: 15%;
+width: 100%;
+}
+.konts{
+padding-left: 20%;
+padding-top: 10%;
+width: 100%;
+height: 25.36458333vw; /*487px*/
+background: url(Backgrounds/Background_6.jpg) left center;
+background-size: auto;
+color: #fff;
+margin-top: 3%;
+box-sizing: border-box;
+}
+/*шрифты и всякое такое*/
+.mainspan{
+
+font-size: 4.53125vw; /*65pt 4.53125vw */
+}
+.submainspan{
+
+
+font-size: 1.66vw; /*24pt*/
+}
+.ruspan{
+
+
+font-size: 4vw; /*54pt 3.75vw 4.5em*/
+}
+.button{
+
+
+font-size: 1.5vw;
+}
+.titlespan{
+
+font-size: 3vw;
+}
+
+/*злосчастные черточки*/
+#mainchert{
+width: 23.4375vw;/*450px;*/
+height: 0.208333333vw;/*4px;*/
+background: white;
+border: none;
+margin-top: 10.41666667vw;
+ /*200px;*/ 
+}
+.seconddiv1 .lchert{
+margin:  1.5625vw/*30px*/ -5%;
+width: 1.5625vw;
+height: 4px;
+background: #282828;
+border: none;
+display: inline;
+
+}
+
+.seconddiv1 .rchert{
+margin: 1.5625vw 5%;
+width: 1.5625vw;
+height: 4px;
+background: #282828;
+display: inline;
+border: none;
+/*position: absolute;*/
+}
+
+.lchert{
+margin: 2.864583333vw
+/*55px*/ -5%;
+width: 1.5625vw;
+height: 4px;
+background: #282828;
+border: none;
+display: inline;
+position: absolute;
+
+}
+.rchert{
+margin: 2.864583333vw 5%;
+width: 1.5625vw;
+height: 4px;
+background: #282828;
+display: inline;
+border: none;
+position: absolute;
+}
+#test{
+width: 100%;
+height: 27.0313vw; /*519px*/
+background: url(Backgrounds/Background_6.jpg) right center;
+background-size: auto;
+color: #fff;
+padding-left: 30px;
+padding-top: 20px;
+box-sizing: border-box;
+}
+.ruble{
+
+display: inline-block;
+background: url(backgrounds/Ruble2.png) no-repeat bottom;
+background-size: contain;
+width: 2.514583333vw;
+/*31px;*/
+height:3.191666667vw;
+/*44*/
+}
+.enter{
+height: 0.520833333vw;
+
+}
+div {
+overflow: auto;
+}
